@@ -26,6 +26,7 @@ WebDriverWait(browser, 20).until(
 browser.find_element_by_css_selector(book_btn).click()
 
 
+# Завершаем бронирование
 el1 = browser.find_element_by_id(num1)
 element1 = el1.text
 result = math.log(abs(12*math.sin(int(element1))))
@@ -33,6 +34,5 @@ ansver = browser.find_element_by_css_selector(ansver)
 ansver.send_keys(str(result))
 browser.find_element_by_css_selector(submit_btn).click()
 
-# Завершаем бронирование
 
 
